@@ -1,0 +1,35 @@
+<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prod book name</th>
+      <th>Prod book price</th>
+      <th>Prod book isbn</th>
+      <th>Prod book author</th>
+      <th>Prod book publicationdate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.prod_book_name %></td>
+        <td><%= product.prod_book_price %></td>
+        <td><%= product.prod_book_isbn %></td>
+        <td><%= product.prod_book_author %></td>
+        <td><%= product.prod_book_publicationDate %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

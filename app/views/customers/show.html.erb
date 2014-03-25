@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cus fullname:</strong>
+  <%= @customer.cus_fullName %>
+</p>
+
+<p>
+  <strong>Cus address:</strong>
+  <%= @customer.cus_address %>
+</p>
+
+<p>
+  <strong>Cus phone:</strong>
+  <%= @customer.cus_phone %>
+</p>
+
+<p>
+  <strong>Cus email:</strong>
+  <%= @customer.cus_email %>
+</p>
+
+<p>
+  <strong>Cus country:</strong>
+  <%= @customer.cus_country %>
+</p>
+
+<p>
+  <strong>Cus city:</strong>
+  <%= @customer.cus_city %>
+</p>
+
+<p>
+  <strong>Cus loginname:</strong>
+  <%= @customer.cus_loginName %>
+</p>
+
+<p>
+  <strong>Cus loginpassword:</strong>
+  <%= @customer.cus_loginPassword %>
+</p>
+
+<p>
+  <strong>Cus confirmpassword:</strong>
+  <%= @customer.cus_confirmPassword %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

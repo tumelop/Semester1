@@ -1,4 +1,32 @@
 RailsBootstrap::Application.routes.draw do
+  resources :order_statuses
+
+  resources :shipments
+
+  resources :shipment_items
+
+  resources :invoice_statuses
+
+  resources :order_item_statuses
+
+  resources :product_types
+
+  resources :payment_methods
+
+  resources :customer_payment_methods
+
+  resources :payments
+
+  resources :invoices
+
+  resources :order_items
+
+  resources :products
+
+  resources :orders
+
+  resources :customers
+
   resources :microposts
 
   resources :users

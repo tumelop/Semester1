@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Credit cardnumber:</strong>
+  <%= @customer_payment_method.credit_cardNumber %>
+</p>
+
+<p>
+  <strong>Payment method details:</strong>
+  <%= @customer_payment_method.payment_method_details %>
+</p>
+
+<%= link_to 'Edit', edit_customer_payment_method_path(@customer_payment_method) %> |
+<%= link_to 'Back', customer_payment_methods_path %>

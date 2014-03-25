@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prod_book_name: MyString
+  prod_book_price: 
+  prod_book_isbn: MyString
+  prod_book_author: MyString
+  prod_book_publicationDate: 2014-03-25
+
+two:
+  prod_book_name: MyString
+  prod_book_price: 
+  prod_book_isbn: MyString
+  prod_book_author: MyString
+  prod_book_publicationDate: 2014-03-25

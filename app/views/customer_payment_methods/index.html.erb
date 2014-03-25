@@ -1,0 +1,29 @@
+<h1>Listing customer_payment_methods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Credit cardnumber</th>
+      <th>Payment method details</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customer_payment_methods.each do |customer_payment_method| %>
+      <tr>
+        <td><%= customer_payment_method.credit_cardNumber %></td>
+        <td><%= customer_payment_method.payment_method_details %></td>
+        <td><%= link_to 'Show', customer_payment_method %></td>
+        <td><%= link_to 'Edit', edit_customer_payment_method_path(customer_payment_method) %></td>
+        <td><%= link_to 'Destroy', customer_payment_method, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer payment method', new_customer_payment_method_path %>
